@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính chu vi diện tích hình vuông</title>
+</head>
+<body>
+  <h3>Tính chu vi và diện tích hình vuông độ dài a</h3>
+<p>Nhập độ dài cạnh a</p>
+<input type="text" id="canha"/><br>
+<button type="button" onclick="miniTest3a()">Click</button>
+  <p id="chuVi" ></p>
+  <p id="dienTich"></p>
+<script>
+    function miniTest3a() {
+      let a = +document.getElementById('canha').value;
+      let chuVi = a*4;
+      let dienTich = a*a;
+      document.getElementById("chuVi").innerHTML = "chu vi của hình vuông là " +chuVi;
+      document.getElementById("dienTich").innerHTML = "diện tích của hình vuông là " +dienTich;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính thế kỷ</title>
+</head>
+<body>
+<label for="year">Nhập năm</label>
+<input type="text" id="year"/>
+
+<button type="button" onclick="calculateCentury()">Click</button>
+<p id="result" ></p>
+<script>
+    function calculateCentury() {
+    let years = + document.getElementById('year').value;
+        if (isNaN(years)) {
+            document.write('Vui lòng nhập số năm hợp lệ')
+        }else {
+    let checkYears = Math.ceil(years/100) ;
+    document.getElementById('result').innerHTML = + checkYears;
+    }
+    }
+</script>
+</body>
+</html>

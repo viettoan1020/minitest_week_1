@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Phép lũy thừa </title>
+</head>
+<body>
+<input type="text" id="numA"/></br>
+<input type="text" id="numB"/></br>
+<button type="button" onclick="miniTest3b()">Click</button>
+<p id="square"></p>
+<p id="productBoth"></p>
+   <script>
+       function miniTest3b() {
+           let a = +document.getElementById('numA').value;
+           let b = +document.getElementById('numB').value;
+           let squareA = a*a;
+           let product = a*b;
+           document.getElementById('square').innerHTML = + squareA;
+           document.getElementById('productBoth').innerHTML = + product;
+       }
+   </script>
+</body>
+</html>

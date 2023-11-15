@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính tổng các số từ a đến b</title>
+</head>
+<body>
+<label for="numA">Nhập a:</label>
+<input type="text" id="numA" />
+
+<label for="numB">Nhập b:</label>
+<input type="text" id="numB" />
+
+<button type="button" onclick="calculateSum()">Click</button>
+
+<p id="result"></p>
+
+<script>
+    function calculateSum() {
+        let a = +document.getElementById('numA').value;
+        let b = +document.getElementById('numB').value;
+        if (isNaN(a) || isNaN(b)) {
+            alert("Vui lòng nhập số cho a và b.");
+            return;
+        }
+        let sum = 0;
+        for (let i = a; i <= b; i++) {
+            sum += i;
+        }
+
+        document.getElementById('result').innerHTML = "Tổng từ " + a + " đến " + b + " là: " + sum;
+    }
+</script>
+</body>
+</html>
